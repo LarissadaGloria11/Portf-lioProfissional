@@ -42,8 +42,9 @@ jobs:
           fi
 
       - name: Bloquear TODO, FIXME, senha, password
-        run: |
-          if grep -RniE "TODO|FIXME|senha|password" .; then
-            echo "❌ Texto sensível encontrado"
-            exit 1
-          fi
+  run: |
+    if grep -RniE "TODO|FIXME|senha|password" . --exclude-dir=.git; then
+      echo "❌ Texto sensível encontrado"
+      exit 1
+    fi
+
