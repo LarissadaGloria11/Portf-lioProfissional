@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    
+    
+    
+    
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    background-image: url(Fundo1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: repeat;
+    gap: 16px;
+
+    p{
+        size: 20px;
+    }
+
+    h1{
+        size: 100px;
+    }
+}
+
+#inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 680px;
+    height: 159px;
+    flex-direction: column;
+
+
+}
+
+#texto2{
+    color: #878EA1;
+    size: 14px;
+}
+
+.fotoperfil {
+    border-radius: 100px;
+    width: 112px;
+    height: 112px;
+    top: 36px;
+    left: 620px;
+
+}
+    h1{
+        color: #E2E4E9;
+
+    }
+
+p{
+    color: white;
+    flex-direction: row;
+}
+
+
+.tags{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+     gap: 16px;
+    
+
+}
+
+.imagem{
+    color: white;
+    gap: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+
+    span {
+    align-items: center;
+    
+    }
+    
+}
+
+.tag{
+width: 114px;
+height: 40px;
+border: 1px solid #292c34;
+background-color: #292c34;
+gap: 8px;
+height: 114px;
+height: 40px;
+border-radius: 100px;
+display: flex;
+align-items: center;
+justify-content: center;
+padding-top: 4px; 
+    padding-right: 16px; 
+    padding-bottom: 8px;
+    padding-left: 8px;
+    size: 16px;
+
+}
+
+.vector{
+/* margin-top: 5.5px; */
+margin-left: 4.5px;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 16px;
+
+    
+    
+}
+
+.projetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+   height: 584px;
+   width: 1040px;
+
+}
+
+
+
+
+.proj{
+    height: 280px;
+    width: 330px;
+    border-radius: 12px;
+    border: 1px solid #292c34;
+    background-color: #292c34;
+    /* gap: 50px; */
+    padding: 12px;
+    gap: 8px;
+
+    #titulo{
+        size: 16px;
+        color: #e2e4e9;
+        gap: 8px;
+    }
+}
+
+.texto{
+    size: 14px;
+    color: #c0c4ce;
+}
+
+.projimg{
+    width: 306px;
+    height: 156px;
+    border-radius: 8px;
+
+}
+
+.grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 480px;
+    width: 100%;
+    gap: 16px;
+    background-color: #0d0e11;
+
+    
+    
+}
+
+.cars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 155px;
+    width: 888px;
+    gap: 24px;
+}
+
+.card{
+    border: 2px solid #16181d;
+    height: 155px;
+    width: 280px;
+    border-radius: 12px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    background-image: url(Itens/Background_Contacts.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: repeat;
+    gap: 16px;
+
+}
+
+.link{
+    width: 400px;
+    height: 320px;
+    gap: 16px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+
+}
+
+.social{
+width: 400px;
+height: 68px;
+border: 1px solid #292c34;
+background-color: #292c34;
+gap: 12px;
+border-radius: 8px;
+display: flex;
+align-items: center;
+/* justify-content: center; */
+padding: 20px;
+margin-bottom: 30px;
+
+}
