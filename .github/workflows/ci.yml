@@ -1,0 +1,50 @@
+name: CI - Validação do Portfólio
+
+on:
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18, 20]
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Verificar se existe index.html
+        run: |
+          if [ ! -f index.html ]; then
+            echo "❌ index.html não encontrado!"
+            exit 1
+          fi
+
+      - name: Instalar htmlhint
+        run: npm install -g htmlhint
+
+      - name: Rodar linter
+        run: htmlhint index.html
+
+      - name: Bloquear arquivos maiores que 500KB
+        run: |
+          if find . -type f -size +500k | grep .; then
+            echo "❌ Arquivo maior que 500KB encontrado"
+            exit 1
+          fi
+
+      - name: Bloquear TODO, FIXME, senha, password
+  run: |
+    if grep -RniE "TODO|FIXME|senha|password" . --exclude-dir=.git; then
+      echo "❌ Texto sensível encontrado"
+      exit 1
+    fi
+
